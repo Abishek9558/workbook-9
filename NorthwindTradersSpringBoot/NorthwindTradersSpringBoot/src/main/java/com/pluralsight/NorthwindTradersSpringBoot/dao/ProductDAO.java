@@ -9,4 +9,5 @@ public interface ProductDAO {
     List<Product> getByName(String name);
     List<Product> getByCategoryId(int categoryId);
     List<Product> getByPrice(double price);
+    Product insert(Product product);
 }

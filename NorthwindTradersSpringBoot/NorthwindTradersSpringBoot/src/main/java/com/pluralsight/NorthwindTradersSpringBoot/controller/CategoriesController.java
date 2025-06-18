@@ -27,4 +27,9 @@ public class CategoriesController {
     public Category getCategoryById(@PathVariable int id) {
         return categoryDAO.getById(id);
     }
+
+    @PostMapping
+    public Category addCategory(@RequestBody Category category) {
+        return categoryDAO.insert(category);
+    }
 }
